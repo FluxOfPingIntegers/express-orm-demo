@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/main.css")
+    body
+        .form-container 
+            form(action="/owners/create", method="POST") 
+                label(for="name") Enter Owners Name
+                input(type="text", name="name")
+                label(for="age") Enter Owners Age
+                input(type="number", name="age")
+                input(type="submit")
+            
+        //- CREATES THE FOLLOWING HTML
+            <body>
+              <div class="form-container">
+                <form action="/owners/create" method="POST">
+                  <label for="name">Enter Owners Name</label>
+                  <input type="text" name="name">
+                  <label for="age">Enter Owners Age</label>
+                  <input type="number" name="age">
+                  <input type="submit">
+                </form>
+              </div>
+            </body>

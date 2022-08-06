@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/main.css")
+    body
+        .form-container 
+            form(action="/pets/create", method="POST") 
+                label(for="name") Enter Pets Name
+                input(type="text", name="name")
+                label(for="age") Enter Pets Age
+                input(type="number", name="age")
+                label(for="type") What Type Of Pet Is This?
+                input(type="text", name="type")
+                input(type="submit")
+            
+        //- CREATES THE FOLLOWING HTML
+            <body>
+              <div class="form-container">
+                <form action="/pets/create" method="POST">
+                  <label for="name">Enter Pets Name</label>
+                  <input type="text" name="name">
+                  <label for="age">Enter Pets Age</label>
+                  <input type="number" name="age">
+                  <label for="type">What Type Of Pet Is This?</label>
+                  <input type="text" name="type">
+                  <input type="submit">
+                </form>
+              </div>
+            </body>

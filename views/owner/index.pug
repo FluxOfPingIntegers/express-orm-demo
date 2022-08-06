@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/main.css")
+    body
+      .list-container 
+        h1 A List Of All Owners
+        ul
+          each owner in owners 
+            - const {name, age} = owner
+            h3 Name: !{name}
+            li Age: !{age}
+
+      //-
+        <body>
+          <div class="list-container">
+            <h1>A List Of All Owners</h1>
+            <ul>
+              <h3>Name: </h3>
+              <li>Age: </li>
+            </ul>
+          </div>
+        </body>
