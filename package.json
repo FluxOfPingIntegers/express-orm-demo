@@ -1,0 +1,29 @@
+{
+  "name": "express-orm-demo",
+  "version": "1.0.0",
+  "description": "This is a demo I am using in order to demonstrate how to utilize Sequelize as an ORM for Express.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluxOfPingIntegers/express-orm-demo.git"
+  },
+  "author": "Ryan Schleck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FluxOfPingIntegers/express-orm-demo/issues"
+  },
+  "homepage": "https://github.com/FluxOfPingIntegers/express-orm-demo#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "pug": "^3.0.2",
+    "sequelize": "^6.21.3"
+  }
+}
