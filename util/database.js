@@ -3,7 +3,7 @@ const password = process.env.CASUAL_PASS;
 
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('express-orm-demo', 'root', password, {
+const sequelize = new Sequelize('express_orm_demo', 'root', password, {
   dialect: 'mysql',
   host: 'localhost'
 });
