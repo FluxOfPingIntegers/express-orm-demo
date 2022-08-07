@@ -42,8 +42,8 @@ Owner.hasMany(Pet);
 
 // todo
 sequelize
-.sinc({force: true})
-// .sinc()
+.sync({force: true})
+// .sync()
 .then(result => {
   app.listen(3000);
 })
