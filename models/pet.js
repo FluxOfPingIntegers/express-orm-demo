@@ -1,9 +1,11 @@
+// importing sequelize
 const Sequelize = require('sequelize');
 
+// importing sequelize instance with database configurations
 const sequelize = require('../util/database');
 
-// todo
-const Pet = sequelize.define('owner', {
+// Defining pet model by its model name, {attributes: {datatypes: options}
+const Pet = sequelize.define('pet', {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,

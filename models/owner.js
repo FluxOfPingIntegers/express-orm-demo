@@ -1,8 +1,10 @@
+// importing sequelize
 const Sequelize = require('sequelize');
 
+// importing sequelize instance with database configurations
 const sequelize = require('../util/database');
 
-// todo
+// Defining owner model by its model name, {attributes: {datatypes: options}
 const Owner = sequelize.define('owner', {
   id: {
     type: Sequelize.INTEGER,
